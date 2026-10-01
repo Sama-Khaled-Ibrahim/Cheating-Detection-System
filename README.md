@@ -6,7 +6,7 @@ Built as a graduation project: a full Flask web application (exam creation, stud
 
 ---
 
-## ✨ Key Features
+##  Key Features
 
 ### Identity Verification
 - **Face verification (ArcFace / InsightFace):** confirms the student taking the exam matches their enrolled profile photo, both at login and continuously during the exam.
@@ -61,7 +61,7 @@ Admin dashboard & per-student report views (templates/*.html)
 
 ---
 
-## 🧠 Tech Stack
+##  Tech Stack
 
 | Layer | Technology |
 |---|---|
@@ -73,7 +73,7 @@ Admin dashboard & per-student report views (templates/*.html)
 
 ---
 
-## 🖥️ Prerequisites
+##  Prerequisites
 
 * Python 3.11
 * Git
@@ -81,7 +81,7 @@ Admin dashboard & per-student report views (templates/*.html)
 
 ---
 
-## ⚡ Installation
+##  Installation
 
 1. **Clone the repository**
 
@@ -110,11 +110,11 @@ pip install --upgrade pip
 pip install -r Newrequirements.txt --use-deprecated=legacy-resolver
 ```
 
-> ⚠️ Use Python 3.11 to avoid dependency conflicts (TensorFlow/NumPy pin to `numpy<2`).
+>  Use Python 3.11 to avoid dependency conflicts (TensorFlow/NumPy pin to `numpy<2`).
 
 ---
 
-## 🧰 Running the Project
+##  Running the Project
 
 1. **Start the Flask server**
 
@@ -132,7 +132,7 @@ http://127.0.0.1:5000
 
 ---
 
-## 📝 Notes
+##  Notes
 
 * **Database:** the project uses `database.db` (SQLite). Delete the file and rerun the app to reset it.
 * **Uploads:** `static/faces/` and `static/voices/` are git-ignored — enrolled reference photos and voice samples are stored there at runtime.
@@ -141,7 +141,7 @@ http://127.0.0.1:5000
 
 ---
 
-## 💡 Tips
+## Tips
 
 * Always activate the virtual environment before running any Python scripts.
 * If you hit errors related to **NumPy or TensorFlow**, confirm your virtual environment uses Python 3.11 and `numpy<2`.
