@@ -17,7 +17,7 @@ This project is a **real-time exam proctoring system** using audio and face veri
 1. **Clone the repository**
 
 ```bash
-git clone https://github.com/<your-username>/exam-proctoring-system.git
+[git clone https://github.com/Sama-Khaled-Ibrahim/Cheating-Detection-System.git]
 cd exam-proctoring-system
 ```
 
