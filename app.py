@@ -17,12 +17,12 @@ pathlib.Path.symlink_to = _safe_symlink_to
 import random
 import uuid
 from flask import Flask, jsonify, render_template, request, redirect, url_for, session, flash
-import db
+from core import db
 import os
-import utils
+from core import utils
 from flask_limiter import Limiter
 from flask_limiter.util import get_remote_address
-import validators
+from core import validators
 from werkzeug.utils import secure_filename
 from datetime import datetime
 import numpy as np
@@ -31,10 +31,10 @@ import cv2
 import mediapipe as mp
 import tensorflow as tf
 import torch
-from audio_utils import get_speaker_embedding ,analyze_audio_chunk
-from image_utils import verify_arcface, verify_arcface_live
-from train_yolo_for_ID import detect_id_objects, is_egyptian_id, crop_face
-from  cheating_engin.cheating_engin import generate_cheating_report
+from core.audio_utils import get_speaker_embedding, analyze_audio_chunk
+from core.image_utils import verify_arcface, verify_arcface_live
+from core.train_yolo_for_ID import detect_id_objects, is_egyptian_id, crop_face
+from cheating_engin.cheating_engin import generate_cheating_report
 
 SIMILARITY_THRESHOLD = 0.4
 # ------------------------------------------------------->
@@ -59,7 +59,7 @@ UPLOAD_FOLDER = 'static/uploads'
 
 connection = db.connect_to_database()
 
-from db import load_exam_questions as _load_exam_questions
+from core.db import load_exam_questions as _load_exam_questions
 
 # db.init_db(connection)
 from functools import wraps

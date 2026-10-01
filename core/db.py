@@ -1,5 +1,5 @@
 
-import utils
+from . import utils
 import json
 
 def load_exam_questions(con, exam_id, teacher):

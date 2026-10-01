@@ -110,6 +110,22 @@ temp_audio.webm
 temp_audio.wav
 static/faces/
 static/voices/
+static/reports/
+static/suspicious_events/
+static/system_events/
+static/uploads/
 evidence_*/
 CV/evidence_*/
 pretrained_models/
+
+# ── ML model files (download separately) ──────────────────────────────────────
+*.pt
+*.joblib
+
+# ── Virtual envs in subdirectories ────────────────────────────────────────────
+CV/.venvPy/
+
+# ── Extra / duplicate requirements files ──────────────────────────────────────
+CV_requirements.txt
+Newrequirements.txt
+finalReq.txt

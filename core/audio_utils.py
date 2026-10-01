@@ -205,7 +205,7 @@
 #         torch.load = patched_torch_load
 #
 #         from pyannote.audio import Pipeline
-#         HF_TOKEN = os.environ.get("HF_TOKEN")
+#         HF_TOKEN = os.environ.get("HF_TOKEN", "HF_TOKEN_PLACEHOLDER")
 #         _osd_pipeline = Pipeline.from_pretrained(
 #             "pyannote/overlapped-speech-detection",
 #             token=HF_TOKEN
@@ -635,7 +635,7 @@ def get_osd_pipeline():
         torch.load = patched_torch_load
 
         from pyannote.audio import Pipeline
-        HF_TOKEN = os.environ.get("HF_TOKEN")
+        HF_TOKEN = os.environ.get("HF_TOKEN", "HF_TOKEN_PLACEHOLDER")
         _osd_pipeline = Pipeline.from_pretrained(
             "pyannote/overlapped-speech-detection",
             token=HF_TOKEN
