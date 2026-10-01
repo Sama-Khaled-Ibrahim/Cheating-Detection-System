@@ -1,0 +1,3 @@
+pip install torch==2.13.1+cpu torchaudio==2.13.1 --index-url https://download.pytorch.org/whl/cpu
+
+pip install Flask==2.3.3 numpy==1.24.3 tensorflow==2.13.0 mediapipe==0.10.13 opencv-python==4.7.0.72 librosa==0.10.0 speechbrain==1.0.2 matplotlib==3.10.0 sounddevice==0.5.5 pydub==0.25.1
